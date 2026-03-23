@@ -9,7 +9,7 @@ Python Agent（LangGraph）  →  HTTP JSON-RPC  →  C++ MCP Server（13 个工
   Coder → Reviewer → Tester                      沙箱执行 / 代码搜索 / 复杂度分析 ...
 ```
 
-- **LLM**：DeepSeek API（deepseek-chat）
+- **LLM**：API（DeepSeek / OpenAI 等）+ Ollama 本地模型，可灵活切换
 - **编排**：LangGraph 状态图，条件路由，最多 3 轮迭代
 - **工具**：read/write_file、execute_code、run_tests、code_search、git_diff、analyze_code 等 13 个
 - **安全**：命令白名单 + 引号感知危险符号过滤 + 路径沙箱
@@ -65,6 +65,3 @@ docs/plan/      项目文档（规划 / 排错 / 面试准备）
 config/         Server 配置
 ```
 
-## 文档
-
-详见 `[docs/plan/](docs/plan/01-总体规划.md)`，包含完整实施过程、排错记录和面试准备材料。
